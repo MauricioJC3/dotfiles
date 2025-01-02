@@ -8,7 +8,7 @@
 
 ### 1. Instalación
 
-1. Descargar Oh My Posh desde Microsoft Store:
+1. Descargar desde Microsoft Store:
 
    ![Descarga Oh My Posh](https://github.com/user-attachments/assets/4ceb15b9-bf6d-4987-99a5-a84881259306)
    ![Instalación Oh My Posh](https://github.com/user-attachments/assets/04d9dc00-16cb-46f0-9b83-d423b1b7a995)

@@ -32,6 +32,35 @@
    ```
    </details>
 
+5. Colocar en la terminal el siguinte comando para ver los themas y selecionar el de su agrado, en este caso se seleciono YS:
+   ```powershell
+   get-poshThemes
+   ```
+   ![selecion de Tema](https://github.com/user-attachments/assets/99acd5bc-b986-4a6b-a2df-4800a14f0a41)
+
+
+7. Con el codigo copiado anteriormente, abrir en la terminal $PROFILE:
+   ```Terminal
+   notepad $PROFILE
+   ```
+8. Se abrira un txt en block de notas pegar el codigo generado por la invocacion el codigo del paso 4, cambiar esta parte " ys.omp.json' --print " por el nombre del tema selecionado, en este caso esta " ys " podria ser " zash.omp.json' --print " u otro tema esto es segun su eleccion
+   ```powershell
+   (@(& 'C:/Users/Usuario/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe' init pwsh --config='C:\Users\Usuario\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json' --print) -join "`n") | Invoke-Expression
+   ```
+9. Otros comandos que se recomienda agregar
+   ```powershell
+   # Lista de comandos utilizados, solo se agregan comandos que utilizes
+   Set-PSReadLineOption -PredictionViewStyle ListView
+
+   # Importacion de iconos para mejor estilo
+   Import-Module Terminal-Icons
+   ```
+
+   Vista de Listados e Iconos :
+   ![image](https://github.com/user-attachments/assets/a58aaea5-0419-4562-ada0-9781d52decb5)
+   ![image](https://github.com/user-attachments/assets/e61fe60f-0849-424c-b135-7b5f2ec8ae99)
+
+
 ### 2. Configuración de Fuentes
 
 1. Instalar fuentes de estilo:

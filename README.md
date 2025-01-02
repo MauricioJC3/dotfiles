@@ -6,81 +6,81 @@
 
 ## Configuración de Oh My Posh
 
-### 1. Instalación
+### 1. Instalación Inicial
 
-1. Descargar desde Microsoft Store:
+1. Descargar Oh My Posh desde Microsoft Store:
 
    ![Descarga Oh My Posh](https://github.com/user-attachments/assets/4ceb15b9-bf6d-4987-99a5-a84881259306)
    ![Instalación Oh My Posh](https://github.com/user-attachments/assets/04d9dc00-16cb-46f0-9b83-d423b1b7a995)
 
-2. Abrir Windows Terminal y ejecutar:
+2. Configurar Windows Terminal:
+- Abrir configuraciones con `Ctrl + ,`
+- En "Perfil Predeterminado" seleccionar PowerShell
+- Establecer "Terminal de Windows" como aplicación predeterminada
+- Cerrar y volver a abrir Windows Terminal
+
+   ![Configuración de Terminal](https://github.com/user-attachments/assets/17a39832-1f45-44d0-b29a-a1d633cd4631)
+  
+
+3. Abrir Windows Terminal y ejecutar:
    ```powershell
    winget install JanDeDobbeleer.OhMyPosh -s winget
    ```
 
-3. Invocar tema de ejemplo:
+### 2. Configuración del Tema
+
+1. Invocar tema de ejemplo:
    ```powershell
    oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json"
    ```
 
-4. Copiar el código generado por la invocación para ver el tema de ejemplo:
-   <details>
-   <summary>Ver código de ejemplo</summary>
-
-   ```powershell
-   (@(& 'C:/Users/Usuario/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe' init pwsh --config='C:\Users\Usuario\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json' --print) -join "`n") | Invoke-Expression
-   ```
-   </details>
-
-5. Colocar en la terminal el siguinte comando para ver los themas y selecionar el de su agrado, en este caso se seleciono YS:
+2. Ver y seleccionar tema deseado:
    ```powershell
    get-poshThemes
    ```
-   ![selecion de Tema](https://github.com/user-attachments/assets/99acd5bc-b986-4a6b-a2df-4800a14f0a41)
+   ![Selección de Tema](https://github.com/user-attachments/assets/99acd5bc-b986-4a6b-a2df-4800a14f0a41)
 
-
-7. Con el codigo copiado anteriormente, abrir en la terminal $PROFILE:
-   ```Terminal
+3. Configurar perfil de PowerShell:
+   ```powershell
    notepad $PROFILE
    ```
-8. Se abrira un txt en block de notas pegar el codigo generado por la invocacion el codigo del paso 4, cambiar esta parte " ys.omp.json' --print " por el nombre del tema selecionado, en este caso esta " ys " podria ser " zash.omp.json' --print " u otro tema esto es segun su eleccion
+
+4. Agregar configuración al perfil:
+   <details>
+   <summary>Código de configuración base</summary>
+
    ```powershell
    (@(& 'C:/Users/Usuario/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe' init pwsh --config='C:\Users\Usuario\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json' --print) -join "`n") | Invoke-Expression
    ```
-9. Otros comandos que se recomienda agregar
+   > Nota: Cambiar 'ys.omp.json' por el nombre del tema seleccionado (ejemplo: 'zash.omp.json')
+   </details>
+
+5. Agregar comandos adicionales recomendados:
    ```powershell
-   # Lista de comandos utilizados, solo se agregan comandos que utilizes
+   # Mejora la vista de predicciones
    Set-PSReadLineOption -PredictionViewStyle ListView
 
-   # Importacion de iconos para mejor estilo
+   # Añade iconos a la terminal
    Import-Module Terminal-Icons
    ```
 
-   Vista de Listados e Iconos :
-   ![image](https://github.com/user-attachments/assets/a58aaea5-0419-4562-ada0-9781d52decb5)
-   ![image](https://github.com/user-attachments/assets/e61fe60f-0849-424c-b135-7b5f2ec8ae99)
+   Resultado visual:
+   ![Vista de Listados](https://github.com/user-attachments/assets/a58aaea5-0419-4562-ada0-9781d52decb5)
+   ![Vista de Iconos](https://github.com/user-attachments/assets/e61fe60f-0849-424c-b135-7b5f2ec8ae99)
 
-
-### 2. Configuración de Fuentes
+### 3. Configuración de Fuentes
 
 1. Instalar fuentes de estilo:
    ```powershell
    oh-my-posh font install
    ```
 
-2. Configurar Windows Terminal:
-   - Abrir configuraciones con `Ctrl + ,`
-   - En "Perfil Predeterminado" seleccionar PowerShell
-   - Establecer "Terminal de Windows" como aplicación predeterminada
+### 4. Personalización de Tema (Opcional)
 
-   ![Configuración de Terminal](https://github.com/user-attachments/assets/17a39832-1f45-44d0-b29a-a1d633cd4631)
-
-### 3. Personalización de Tema
-
-Para agregar estilos personalizados, modificar el archivo JSON de configuración:
+Para personalizar los colores, modificar el archivo JSON de configuración:
 
 <details>
-<summary>Configuración del tema "Retrowave"</summary>
+<summary>Ejemplo: Tema "Retrowave"</summary>
 
 ```json
 {

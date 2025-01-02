@@ -4,7 +4,9 @@
 - [Chezmoi](https://www.chezmoi.io/quick-start/) - Gestor de dotfiles
 - [Oh My Posh](https://ohmyposh.dev/docs/) - Personalizador de terminal
 
-## Configuración de Oh My Posh
+<!-- Comienzo de desplegable -->
+<details>
+<summary>⚙️ Configuración de Oh My Posh (Haz clic para expandir)</summary>
 
 ### 1. Instalación Inicial
 
@@ -116,6 +118,8 @@ Para personalizar los colores, modificar el archivo JSON de configuración:
 ![Configuración Final](https://github.com/user-attachments/assets/220d1d0d-7b7e-4159-a197-f199288ac648)
 
 **Nota**: Para cambiar el tipo de letra, es posible que necesites abrir la consola en modo administrador.
+<!-- Fianl de desplegable -->
+</details>
 
 ## Comandos Útiles de Chezmoi
 

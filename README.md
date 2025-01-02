@@ -1,5 +1,19 @@
 # Configuración DotFile
 
+
+## Intalacion
+ ### Windows
+  - Instalar Chezmoi
+  ```powershell
+   git clone https://github.com/MauricioJC3/dotfiles.git ~\.local\share\chezmoi
+  ```
+ ```powershell
+   chezmoi init
+  ```
+  ```powershell
+   chezmoi apply
+  ```
+
 ## Herramientas Necesarias
 - [Chezmoi](https://www.chezmoi.io/quick-start/) - Gestor de dotfiles
 - [Oh My Posh](https://ohmyposh.dev/docs/) - Personalizador de terminal
@@ -125,6 +139,7 @@ Para personalizar los colores, modificar el archivo JSON de configuración:
 
 | Comando | Descripción |
 |---------|-------------|
+| `chezmoi init` | Inicializar |
 | `chezmoi add` | Agregar archivo |
 | `chezmoi diff` | Ver los cambios realizados |
 | `chezmoi apply` | Aplicar los cambios |

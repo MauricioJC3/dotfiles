@@ -3,7 +3,11 @@
 
 ## Intalacion
  ### Windows
-  - Instalar Chezmoi
+ 
+   <details>
+   <summary>⚙️ Instalacion y aplicacion de Chezmoi (Haz clic para expandir)</summary>
+     
+   - #### *Instalar* [Chezmoi](https://www.chezmoi.io/install/)
   ```powershell
    git clone https://github.com/MauricioJC3/dotfiles.git ~\.local\share\chezmoi
   ```
@@ -13,7 +17,8 @@
   ```powershell
    chezmoi apply
   ```
-
+   </details>
+    
 ## Herramientas Necesarias
 - [Chezmoi](https://www.chezmoi.io/quick-start/) - Gestor de dotfiles
 - [Oh My Posh](https://ohmyposh.dev/docs/) - Personalizador de terminal

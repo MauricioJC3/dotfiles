@@ -7,9 +7,11 @@
 ### Configuracion Oh My Posh
 - Instalar -> winget install JanDeDobbeleer.OhMyPosh -s winget
 - invocar tema de ejemplo -> oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\jandedobbeleer.omp.json"
-- Copiar Codigo generado por la invocacion y luego pegarlo para ver el tema de ejemplo (Ejemplo:
-"  (@(& 'C:/Users/Usuario/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe' init pwsh --config='C:\Users\Usuario\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json' --print) -join "`n") | Invoke-Expression   "      
-  )
+<details><summary><a>Copiar Codigo generado por la invocacion y luego pegarlo para ver el tema de ejemplo</a></summary>
+Ejemplo:
+(@(& 'C:/Users/Usuario/AppData/Local/Programs/oh-my-posh/bin/oh-my-posh.exe' init pwsh --config='C:\Users\Usuario\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json' --print) -join "`n") | Invoke-Expression 
+</details>
+  
 
 ### Codigos Utilizados
 - Chezmoi add -> Agregar archivo

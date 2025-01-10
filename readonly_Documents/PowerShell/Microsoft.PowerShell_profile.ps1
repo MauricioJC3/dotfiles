@@ -22,3 +22,9 @@ if (Test-Path($ChocolateyProfile)) {
 }
 
 # if ( Test-Path '~/.inshellisense/pwsh/init.ps1' -PathType Leaf ) { . ~/.inshellisense/pwsh/init.ps1 } 
+
+Set-Alias -Name x -Value nvim
+
+function w {
+  windsurf .
+}

@@ -46,11 +46,12 @@
     {
         "defaults": 
         {
-            "colorScheme": "One Half Dark",
+            "colorScheme": "Retrowave",
             "font": 
             {
                 "face": "FiraCode Nerd Font Mono"
-            }
+            },
+            "opacity": 72
         },
         "list": 
         [

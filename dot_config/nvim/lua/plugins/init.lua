@@ -33,18 +33,19 @@ return {
   },
 
   {
-    "EdenEast/nightfox.nvim",
+    'maxmx03/fluoromachine.nvim',
+    lazy = false,
     priority = 1000,
-    config = function()
-      require("nightfox").setup({
-        options = {
-          transparent = true,
-          terminal_colors = true,
-        },
-      })
-    end,
-    init = function()
-      vim.cmd.colorscheme "carbonfox"
-    end,
-  },
+    config = function ()
+     local fm = require 'fluoromachine'
+
+     fm.setup {
+        glow = true,
+        theme = 'fluoromachine',
+        transparent = true,
+     }
+
+     vim.cmd.colorscheme 'fluoromachine'
+    end
+},
 }

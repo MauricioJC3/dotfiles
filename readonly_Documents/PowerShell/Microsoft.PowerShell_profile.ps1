@@ -28,3 +28,5 @@ Set-Alias -Name x -Value nvim
 function w {
   windsurf .
 }
+
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
